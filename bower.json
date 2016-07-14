@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Nicholas Stobie <npstobie@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/npstobie/Foodr-ang",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.2.18",
+    "jquery": "^2.2.2"
+  }
+}

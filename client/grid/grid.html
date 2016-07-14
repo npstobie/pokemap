@@ -1,0 +1,26 @@
+<div class="col-md-3 col-sm-1"></div>
+<div id="container" ng-controller="grid-controller" class="col-md-6 col-sm-10 col-xs-12">
+  <div class="buddy" id="buddy1" style="display: block;">
+    <h3 class="swipe-title">{{name}}</h3>
+    <div class="avatar"  style="display: block; background-image: url({{image}})"></div>
+    <div class="sub-div">
+      <h4 class="sub-title">Address: {{address}}</h4><br>
+      <h4 class="sub-title">Price: {{price}}</h4>
+    </div>
+    <div class="buttonHolder">
+      <a href="#" class="button cross dislike" ng-click="swipeLeft()"></a>
+      <a href="#" class="button tick like" ng-click="swipeRight()"></a>
+    </div>
+  </div>
+  <div class="buddy" id="buddy2">
+    <h3 class="swipe-title">{{name2}}</h3>
+    <div class="avatar"  style="display: block; background-image: url({{image2}})"></div>
+    <h4 class="sub-title">Address: {{address2}}</h4><br>
+    <h4 class="sub-title">Price: {{price2}}</h4>
+    <div class="buttonHolder">
+      <a href="#" class="button cross dislike" ng-click="swipeLeft2()"></a>
+      <a href="#" class="button tick like" ng-click="swipeRight2()"></a>
+    </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-1"></div>

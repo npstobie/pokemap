@@ -1,0 +1,33 @@
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+	    async defer></script>
+<div class="col-md-3 col-sm-1"></div>
+<div id="container" ng-controller="spot-controller" class="col-md-6 col-sm-10 col-xs-12">
+  <div class="buddy3 buddy2" style="display: block;">
+    <a href="/"><button type="button" class="backBtn" id="back">Back</button></a>
+    <h3 class="swipe-title" id="spotTitle">{{name}}</h3>
+    <button type="button" class="btn btn-success" id="back2">Back</button>
+    <div class="avatar"  style="display: block; background-image: url({{image}})"></div>
+		<!-- Google map box -->
+    <h4 class="spot-subtitle">Address: {{address}}</h4>
+    <div class="col-md-1 col-sm-1 col-xs-1"></div>
+    <div id="map" class="col-md-10 col-sm-10 col-xs-10"></div>
+    <div class="col-md-1 col-sm-1 col-xs-1"></div>
+    <script>
+	    function initMap() {
+	      var mapDiv = document.getElementById('map');
+	      var map = new google.maps.Map(mapDiv, {
+	        center: { lat: 37.7921497, lng: -122.41001 },
+	        zoom: 17
+	      });
+				var marker = new google.maps.Marker({
+				    map: map,
+				    place: {
+				        placeId: 'ChIJp1S1Bo2AhYARewugVNy_l4g',
+				        location: { lat: 37.7921497, lng: -122.41001 }
+				    }
+				});
+	    }
+      </script>
+    <div><h4 class="spot-subtitle">Price: {{price}}</h4></div>
+  </div>
+<div class="col-md-3 col-sm-1"></div>
